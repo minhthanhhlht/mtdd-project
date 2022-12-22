@@ -48,7 +48,7 @@ export default {
   methods: {
     getAll() {
       this.$request
-        .get("http://localhost:9000/api/products")
+        .get("http://minhthanhhlht.com:9000/api/products")
         .then((res) => {
           this.products = res.data;
         });

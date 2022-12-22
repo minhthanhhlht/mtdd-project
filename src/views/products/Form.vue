@@ -114,7 +114,7 @@ export default {
       // this.validate();
       if (this.validate()) {
         this.$request
-          .post("http://localhost:9000/api/products/", this.products)
+          .post("http://minhthanhhlht.com:9000/api/products/", this.products)
           .then((res) => {
             if (res.data.success) {
               this.$router.push({ name: "product.list" });
@@ -126,7 +126,7 @@ export default {
     },
     getProduct(productId) {
      
-      this.$request.get(`http://localhost:9000/api/products/${productId}`).then((res) => {        
+      this.$request.get(`http://minhthanhhlht.com:9000/api/products/${productId}`).then((res) => {        
            this.products = res.data[0];
            
         });
